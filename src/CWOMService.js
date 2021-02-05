@@ -410,7 +410,7 @@ module.exports = class CWOMService {
     getActionsForScope(scopeid, filtermap) {
         var svc = this;
         return new Promise(resolve => {
-            var turbourl = svc.config.turboserver + '/api/v2/actions';
+            var turbourl = svc.config.turboserver + '/api/v3/actions';
             var headers = {
                 'Content-Type': 'application/json;charset=UTF-8',
                 'Authorization': 'Bearer ' + svc.authToken
@@ -468,7 +468,7 @@ module.exports = class CWOMService {
 
         var svc = this;
         return new Promise(resolve => {
-            var turbourl = svc.config.turboserver + '/api/v2/supplychains?uuids=' + uuid + '&detail_type=entity&health=true';
+            var turbourl = svc.config.turboserver + '/api/v3/supplychains?uuids=' + uuid + '&detail_type=entity&health=true';
             var headers = {
                 'Content-Type': 'application/json;charset=UTF-8',
                 'Authorization': 'Bearer ' + svc.authToken
