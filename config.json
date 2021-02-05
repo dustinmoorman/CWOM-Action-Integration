@@ -1,0 +1,9 @@
+{
+	"localport":3000,
+    "https":true,
+	"cwom_config": {
+		"turboserver": "https://my.turbo.server.com",
+		"username": "<username>",
+		"password": "<password>"
+	}
+}
